@@ -11,8 +11,7 @@ Analisis ini mengintegrasikan 4 file data utama yang berada di dalam dataset `ki
 *   `kf_inventory`: Data pencatatan stok berkala di gudang farmasi.
 
 ### 💻 Luaran Proyek (Outputs)
-1.  **Sintaks SQL Utama**: Script lengkap pembuatan tabel analisis utama dapat diakses pada file [`analysis_script.sql`](./analysis_script.sql).
-2.  **Sampel Hasil Data**: Data komparasi metrik bisnis (Gross Laba, Nett Sales, Nett Profit) dapat dilihat pada file [`sample_analysis_results.csv`](./analysis_script.csv).
+**Sintaks SQL Utama**: Script lengkap pembuatan tabel analisis utama dapat diakses pada file [`analysis_script_kf.sql`](./analysis_script_kf.sql).
 
 ### ⚠️ Catatan Kendala Teknis (Pemeriksaan Akses Akun GCP)
 Berdasarkan tinjauan kendala teknis penugasan mengenai peran (*role*) akun GCP:
