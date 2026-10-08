@@ -1,4 +1,4 @@
-# Kimia Farma Operational & Financial Analytics Project
+# Performance Analytics Project - Kimia Farma Business Year 2020-2023
 ### 📊 Project Description
 This project focuses on analyzing Kimia Farma's operational performance by examining transaction and financial data across various branch offices throughout Indonesia using Google Cloud BigQuery. The primary goal is to transform raw operational data into a unified performance analysis table ready for business intelligence visualization.
 
