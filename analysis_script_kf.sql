@@ -1,24 +1,24 @@
 CREATE OR REPLACE TABLE `rakamin-kf-analytics-2026.kimia_farma.analysis_table_kf` AS
 SELECT 
-  -- 1. Data Transaksi
+  -- Data Transaksi
   t.transaction_id,
   t.date,
   
-  -- 2. Data Cabang
+  -- Data Cabang
   t.branch_id,
   c.branch_name,
   c.kota,
   c.provinsi,
   c.rating AS rating_cabang,
   
-  -- 3. Data Pelanggan & Produk
+  -- Data Pelanggan & Produk
   t.customer_name,
   t.product_id,
   p.product_name,
   t.price AS actual_price,
   t.discount_percentage,
   
-  -- 4. Perhitungan Persentase Gross Laba berdasarkan Harga Produk
+  -- Persentase Gross Laba
   CASE 
     WHEN t.price <= 50000 THEN 0.10
     WHEN t.price > 50000 AND t.price <= 100000 THEN 0.15
@@ -27,10 +27,10 @@ SELECT
     ELSE 0.30
   END AS persentase_gross_laba,
 
-  -- 5. Perhitungan Nett Sales (Harga setelah dipotong diskon)
+  -- Nett Sales
   (t.price * (1 - (t.discount_percentage / 100))) AS nett_sales,
 
-  -- 6. Perhitungan Nett Profit (Nett Sales dikali Persentase Laba dikurangi nilai Diskon)
+  -- Nett Profit
   ((t.price * (1 - (t.discount_percentage / 100))) * 
     CASE 
       WHEN t.price <= 50000 THEN 0.10
@@ -40,7 +40,7 @@ SELECT
       ELSE 0.30
     END) AS nett_profit,
     
-  -- 7. Rating Transaksi
+  -- Rating Transaksi
   t.rating AS rating_transaksi
 
 FROM 
