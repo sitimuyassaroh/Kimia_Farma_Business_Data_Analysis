@@ -18,7 +18,7 @@ SELECT
   t.price AS actual_price,
   t.discount_percentage,
   
-  -- 4. Perhitungan Persentase Gross Laba berdasarkan Harga Produk
+  -- 4. Persentase Gross Laba berdasarkan Harga Produk
   CASE 
     WHEN t.price <= 50000 THEN 0.10
     WHEN t.price > 50000 AND t.price <= 100000 THEN 0.15
@@ -27,10 +27,10 @@ SELECT
     ELSE 0.30
   END AS persentase_gross_laba,
 
-  -- 5. Perhitungan Nett Sales (Harga setelah dipotong diskon)
+  -- 5. Perhitungan Nett Sales
   (t.price * (1 - (t.discount_percentage / 100))) AS nett_sales,
 
-  -- 6. Perhitungan Nett Profit (Nett Sales dikali Persentase Laba dikurangi nilai Diskon)
+  -- 6. Perhitungan Nett Profit
   ((t.price * (1 - (t.discount_percentage / 100))) * 
     CASE 
       WHEN t.price <= 50000 THEN 0.10
