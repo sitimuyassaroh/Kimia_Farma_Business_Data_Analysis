@@ -15,11 +15,11 @@ This analysis integrates 4 core data files stored within the `kimia_farma` datas
    Click [here](https://datastudio.google.com/reporting/8cbeb960-9fad-4140-818f-db680a9861ff) to view the full dashboard!
    
    <details>
-      <summary>Click the dashboard preview</summary>
+   <summary>Click the dashboard preview</summary>
       
-      <img width="1012" height="562" alt="Key Parameters of Visualization Dashboard" src="https://github.com/user-attachments/assets/9106cd5e-026c-4601-a439-3b7104c9bc4b"/>
+   ![Key Parameters of Visualization Dashboard](Visualization&20Dashboard/Key%20Parameters%20of%20Visualization%20Dashboard.png)
       
-      <p><em>Figure 1 - Key Parameters of Visualization Dashboard</em></p>
+   <p><em>Figure 1 - Key Parameters of Visualization Dashboard</em></p>
    </details>
 
 ### ⚠️ Technical Constraint Note (GCP Account Access Review)
