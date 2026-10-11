@@ -19,7 +19,7 @@ This analysis integrates 4 core data files stored within the `kimia_farma` datas
       
    ![Visualization&20Dashboard/Key%20Parameters%20of%20Visualization%20Dashboard.png](https://github.com/sitimuyassaroh/Kimia_Farma_Business_Data_Analysis/blob/main/Visualization%20Dashboard/Key%20Parameters%20of%20Visualization%20Dashboard.png)
       
-   <p><em>Figure 1 - Key Parameters of Visualization Dashboard</em></p>
+   <p align="center"><em>Figure 1 - Key Parameters of Visualization Dashboard</em></p>
    </details>
 
 ### ⚠️ Technical Constraint Note (GCP Account Access Review)
