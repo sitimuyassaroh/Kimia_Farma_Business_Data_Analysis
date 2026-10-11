@@ -13,6 +13,14 @@ This analysis integrates 4 core data files stored within the `kimia_farma` datas
 1. **Main SQL Syntax**: The complete script used to generate the primary analysis table can be found in [`analysis_script_kf.sql`](./analysis_script_kf.sql).
 2.  **Data Visualization Dashboard**: is divided into three pages: Data Snapshot, Key Parameters, and Additional Parameters. The visualization results are based on the `analysis_script_kf.sql` table processed in Looker Studio (Data Studio).
    Click [here](https://datastudio.google.com/reporting/8cbeb960-9fad-4140-818f-db680a9861ff) to view the full dashboard!
+   
+   <details>
+      <summary>Click the dashboard preview</summary>
+      
+      <img width="1012" height="562" alt="Key Parameters of Visualization Dashboard" src="https://github.com/user-attachments/assets/9106cd5e-026c-4601-a439-3b7104c9bc4b"/>
+      
+      <p><em>Figure 1 - Key Parameters of Visualization Dashboard</em></p>
+   </details>
 
 ### ⚠️ Technical Constraint Note (GCP Account Access Review)
 In compliance with the assignment's technical guidelines regarding GCP account roles:
